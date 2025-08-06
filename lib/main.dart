@@ -2,15 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:profile2/Getx_TODOLIST/page/todolist.dart';
-import 'package:profile2/Profile_Screen/profilefrom.dart';
-import 'package:profile2/getx/about.dart';
-import 'package:profile2/getx/controller.dart';
-import 'package:profile2/getx/laguage.dart';
-import 'package:profile2/getx/lan.dart';
-import 'package:profile2/getx/scankbar.dart';
-import 'package:profile2/page/login1.dart';
-import 'package:profile2/page/login2.dart';
-import 'package:profile2/page/screen.dart';
+
 //8238062035
 void main() {
   runApp(const MyApp());
@@ -23,22 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  GetMaterialApp(
-      locale: Locale('en'),
-      fallbackLocale: Locale('en'),
-      translations: lan(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
 
         brightness: Brightness.light,primaryColor: Colors.blue
       ),
-      getPages: [
-        GetPage(name: '/login1', page: () => Login1(),
-        transition: Transition.leftToRight),
-        GetPage(name: '/login2', page: () => About(),
-            transition: Transition.rightToLeft),
 
-      ],
       home: Todolist(),
     );
   }
