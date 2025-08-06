@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:profile2/Getx_TODOLIST/api/Tcontroller.dart';
 
-import '../../getx/c.dart';
+
 
 class Todolist extends StatelessWidget {
   const Todolist({super.key});
@@ -135,7 +135,7 @@ Tcontroller controller = Get.put(Tcontroller());
     ElevatedButton(
     style: ButtonStyle(
     backgroundColor:
-    MaterialStateProperty.all(
+    WidgetStateProperty.all(
     Colors.grey),
     ),
     onPressed: (){
@@ -182,7 +182,7 @@ Tcontroller controller = Get.put(Tcontroller());
               ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all(
+                  WidgetStateProperty.all(
                       Colors.grey),
                 ),
                 onPressed: (){
